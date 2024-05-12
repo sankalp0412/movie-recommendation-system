@@ -3,10 +3,15 @@ import pickle
 import pandas as pd
 import requests
 
+st.set_page_config(layout="wide")
+
+
 def fetch_poster(movie_id):
     response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=c41af3823c9e59a61777f9f18239b624&language=en-US'.format(movie_id))
     data = response.json()
-    return "https://image.tmdb.org/t/p/w500" +  data['poster_path']
+    return "https://image.tmdb.org/t/p/w500" + data['poster_path']
+
+
 def recommend(movie):
     movie_index = movie_list[movie_list['title'] == movie].index[0]
     distances = similarity[movie_index]
@@ -29,23 +34,15 @@ movie_titles = movie_list['title'].values
 
 st.title('Movie Recommender System')
 
-selected_movie_name = st.selectbox('Hi, Choose your Movie',(movie_titles))
+selected_movie_name = st.selectbox('Select Movie',(movie_titles))
 
 if st.button('Recommend'):
-    names,posters = recommend(selected_movie_name)
-    col1,col2,col3,col4,col5 =  st.columns(5)
-    with col1:
-        st.text(names[0])
-        st.image(posters[0])
-    with col2:
-        st.text(names[1])
-        st.image(posters[1])
-    with col3:
-        st.text(names[2])
-        st.image(posters[2])
-    with col4:
-        st.text(names[3])
-        st.image(posters[3])
-    with col5:
-        st.text(names[4])
-        st.image(posters[4])
+    names, posters = recommend(selected_movie_name)
+    num_recommendations = min(len(names), 5)  # Ensure we have at most 5 recommendations
+    cols = st.columns(num_recommendations)
+
+    for i in range(num_recommendations):
+        with cols[i]:
+            st.text(names[i])
+            st.image(posters[i])
+
