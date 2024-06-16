@@ -26,8 +26,8 @@ This project helped me gain experience in:
 - I learned about how to implement machine learning algorithms for recommendation systems.
 - Scrubbing of raw data using numpy and pandas.
 - Using Python libraries like Pandas, NumPy, NLTK, and scikit-learn.
-- Understanding of conepts like cosine similarity and vectorization.
-- My first interaction witg streamlit and it's usage for UI development and deploying.
+- Understanding of concepts like cosine similarity and vectorization.
+- My first interaction with streamlit and it's usage for UI development and deploying.
 
 ## How it Works
 
