@@ -42,7 +42,7 @@ system will generate upto 5 personalized movie recommendations accordingly.
 
 [Check out the project](https://movie-recommendation-system-sd-rtthwzkihwsl3vfjg8khmh.streamlit.app/)
 
-#Screenshots of the app
+# Screenshots of the app
 
 **![image](https://github.com/sankalp0412/movie-recommendation-system/assets/68068030/20ed7d34-055b-4cb1-ad01-7be57972c29d)
 **![image](https://github.com/sankalp0412/movie-recommendation-system/assets/68068030/b9d64118-959a-459c-aadc-dc073ad8df66)
