@@ -28,6 +28,7 @@ This project helped me gain experience in:
 - Using Python libraries like Pandas, NumPy, NLTK, and scikit-learn.
 - Understanding of concepts like cosine similarity and vectorization.
 - My first interaction with streamlit and it's usage for UI development and deploying.
+- Also my first interaction with git LFS.
 
 ## How it Works
 
