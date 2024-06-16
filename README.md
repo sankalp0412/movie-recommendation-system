@@ -23,14 +23,15 @@ The system is built with Python and utilizes libraries such as Pandas, NumPy, NL
 
 This project helped me gain experience in:
 
-- Implementing machine learning algorithms for recommendation systems.
-- Working with textual data preprocessing techniques.
+- I learned about how to implement machine learning algorithms for recommendation systems.
+- Scrubbing of raw data using numpy and pandas.
 - Using Python libraries like Pandas, NumPy, NLTK, and scikit-learn.
-- Developing interactive web applications with Streamlit.
+- Understanding of conepts like cosine similarity and vectorization.
+- My first interaction witg streamlit and it's usage for UI development and deploying.
 
 ## How it Works
 
-The system analyzes movie attributes and user preferences to generate recommendations. It uses content-based filtering to find similarities between movies based on their features. The cosine similarity metric is employed to measure the similarity between movies, enabling accurate recommendations.
+The system analyzes movie attributes (specifically genre, movie actors, director ,rating and synopsis ) and user preferences to generate recommendations. It uses content-based filtering to find similarities between movies based on their features. The cosine similarity metric is employed to measure the similarity between movies, enabling accurate recommendations.
 
 
 ## About the Interface
@@ -40,3 +41,11 @@ system will generate upto 5 personalized movie recommendations accordingly.
 
 
 [Check out the project](https://movie-recommendation-system-sd-rtthwzkihwsl3vfjg8khmh.streamlit.app/)
+
+#Screenshots of the app
+
+**![image](https://github.com/sankalp0412/movie-recommendation-system/assets/68068030/20ed7d34-055b-4cb1-ad01-7be57972c29d)
+**![image](https://github.com/sankalp0412/movie-recommendation-system/assets/68068030/b9d64118-959a-459c-aadc-dc073ad8df66)
+![image](https://github.com/sankalp0412/movie-recommendation-system/assets/68068030/55949420-532e-455f-8a95-a627c05dc550)
+
+
