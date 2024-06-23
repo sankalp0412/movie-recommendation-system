@@ -2,12 +2,13 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+from config import API_KEY
 
 st.set_page_config(layout="wide")
 
 
 def fetch_poster(movie_id):
-    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=c41af3823c9e59a61777f9f18239b624&language=en-US'.format(movie_id))
+    response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US')
     data = response.json()
     return "https://image.tmdb.org/t/p/w500" + data['poster_path']
 
