@@ -2,9 +2,14 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-from config import API_KEY
+import os
 
 st.set_page_config(layout="wide")
+
+API_KEY = os.getenv('TMDB_API_KEY')
+
+if not API_KEY:
+    st.error("API key not found. Please set the TMDB_API_KEY environment variable.")
 
 
 def fetch_poster(movie_id):
